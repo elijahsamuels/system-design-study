@@ -147,9 +147,7 @@
 2. **Wi-Fi (IEEE 802.11)**: Wireless LAN standard for wireless network communication using radio waves.
 3. **DSL (Digital Subscriber Line)**: Broadband technology for transmitting digital data over telephone lines.
 4. **Fiber Optics**: Transmission technology that uses light signals to transmit data over optical fibers.
-5. **Coaxial Cable**: Transmission medium consisting of a center conductor surrounded by
-
- insulating material and a metallic shield.
+5. **Coaxial Cable**: Transmission medium consisting of a center conductor surrounded by insulating material and a metallic shield.
 6. **Twisted Pair**: Transmission medium consisting of pairs of insulated wires twisted together to reduce electromagnetic interference.
 7. **RS-232**: Standard for serial communication between devices using serial ports.
 8. **USB (Universal Serial Bus)**: Standard for connecting devices to a computer for data transfer and power supply.
