@@ -38,11 +38,11 @@ Instead of trying to memorize all the features of various relational database se
 - Partial
 - Reverse
 - Bitmap
-- GiST
-- GIN
+- GiST (Generalized Search Tree)
+- GIN (Generalized Inverted Index)
 - Full-text
 - Spatial
-- FOT
+- FOT (Field-Oriented Table)
 - Duplicate index prevention
 
 ## Database capabilities
@@ -82,19 +82,19 @@ Instead of trying to memorize all the features of various relational database se
 - Range (zipcodes: 90000-99999)
 - Hash (states: California, Oregon, Washington)
 - Composite (Range+Hash) (California && 90000-94999)
-- List
-- Expression
+- List (A table called orders with a region column indicating the geographical region where an order was placed. Partition this table by 'region')
+- Expression (Divides a table into partitions based on a custom expression.)
 - Round Robin (each partition takes a turn getting new data. dataA -> partition1, dataB -> partition2, etc... )
 
 ## Access control
 - Native network encryption
 - Brute-force protection
 - Enterprise directory compatibility
-- Password complexity rules2
-- Patch access3
-- Run unprivileged4
+- Password complexity rules
+- Patch access
+- Run unprivileged
 - Audit
 - Resource limit
-- Separation of duties (RBAC)5
+- Separation of duties (RBAC)
 - Security Certification
 - Attribute-Based Access Control (ABAC)
