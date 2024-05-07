@@ -32,7 +32,7 @@ Instead of trying to memorize all the features of various relational database se
 - Max column name size
 
 ## Indexes
-- R-/R+ tree (rectangle tree, rectangle tree)
+- R-/R+ tree (rectangle tree)
 - Hash
 - Expression
 - Partial
