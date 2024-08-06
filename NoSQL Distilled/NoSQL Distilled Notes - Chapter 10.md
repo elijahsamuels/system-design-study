@@ -53,9 +53,24 @@
 
 ## Consistency
 
+- When a write is received by Cassandra, the data is first recorded in a commit log, then written to an in-memory structure known as memtable. A write operation is considered successful once it’s written to the commit log and the memtable. Writes are batched in memory and periodically written out to structures known as SSTable. SSTables are not written to again after they are flushed; if there are changes to the data, a new SSTable is written. Unused SSTables are reclaimed by compactation.
+- If the data is stale, subsequent reads will get the latest (newest) data; this process is known as read repair. The low consistency level is good to use when you do not care if you get stale data and/or if you have high read performance requirements.
+- During write operations, theQUORUM consistencysettingmeansthatthewritehastopropagatetothe majority of the nodes before it is considered successful and the client is notified.
+- While a node is down, the data that was supposed to be stored by that node is handed off to other nodes. As the node comes back online, the changes made to the data are handed back to the node. This technique is known as hinted handoff. Hinted handoff allows for faster restore of failed nodes.
+
 ## Transactions
 
+- atomic at row level
+- Writes are first written to commit logs and memtables, and are only considered good when the write to commit log and memtable was successful
+
 ## Availability
+
+- highly available
+
+## Scaling
+
+- Scaling an existing cluster is a matter of adding more nodes
+-
 
 ## Query Features
 
