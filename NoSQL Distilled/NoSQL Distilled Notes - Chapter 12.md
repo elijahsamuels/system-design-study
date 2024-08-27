@@ -1,3 +1,1 @@
-# Map-Reduce
-
-
+# Chapter 12. Schema Migrations
